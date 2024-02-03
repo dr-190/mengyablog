@@ -1,0 +1,653 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac） | 梦芽博客</title><meta name="keywords" content="BBdown"><meta name="author" content="飔梦"><meta name="copyright" content="飔梦"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）"><meta name="application-name" content="【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）"><meta property="og:url" content="https://www.syyxin.eu.org/posts/3.html"><meta property="og:site_name" content="梦芽博客"><meta property="og:description" content="一款强大的哔哩哔哩视频工具，支持下载哔哩哔哩TV端无水印视频！"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://www.freeimg.cn/i/2024/02/03/65bdeab701f4c.png"><meta property="article:author" content="飔梦"><meta property="article:tag" content="Blog,网站源码,技术博客,博客,经验分享,源码分享,笔记"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://www.freeimg.cn/i/2024/02/03/65bdeab701f4c.png"><meta name="description" content="一款强大的哔哩哔哩视频工具，支持下载哔哩哔哩TV端无水印视频！"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="https://www.syyxin.eu.org/posts/3"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"与数百名博主无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"},
+  peoplecanvas: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: 'https://syybili-twikoo.hf.space/',
+  commentBarrageConfig:{"enable":true,"maxBarrage":1,"barrageTime":4000,"accessToken":"dfa6f14a504a50d19ae96c480342b156","mailMd5":"cceeec1b34bdafe8f85bba8e17489be6"},
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: {"apiurl":"https://friends.anheyu.com/"},
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":null},
+  algolia: {"appId":"XDQN06SBIJ","apiKey":"3fdc38716b9354e7aebfe282dc2dea32","indexName":"hexo","hits":{"per_page":6},"languages":{"input_placeholder":"输入关键词后按下回车查找","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 飔梦","link":"链接: ","source":"来源: 梦芽博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '梦芽博客',
+  title: '【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）',
+  postAI: '',
+  pageFillDescription: 'BBDown, 注意, 快速开始, 下载, 开始使用, 功能, TODO, 使用教程, 演示一款命令行式哔哩哔哩下载器注意本软件混流时需要外部程序普通视频或杜比视界以上或新版快速开始本软件已经以形式发布如果你本地有环境使用如下命令即可安装使用如果需要更新使用如下命令下载版本自动构建的测试版本开始使用下载无水印视频需要登录云视听小电视账号部分视频可能还是会有水印一般很火的视频是没有水印的目前命令行参数支持情况是一个免费且便捷高效的哔哩哔哩下载解析软件视频地址或使用端解析模式使用端解析模式使用国际版东南亚视频解析模式使用来混流视频编码的选择优先级用逗号分割例画质优先级用逗号分隔例超高清高码率真彩杜比视界仅解析而不进行下载展示所有分标题调用进行下载你需要自行准备好二进制可执行文件交互式选择清晰度不要显示所有可用音视频流使用多线程下载默认开启仅下载视频仅下载音频仅下载弹幕仅下载字幕仅下载封面输出调试日志跳过混流步骤跳过字幕下载跳过封面下载下载音视频时强制使用协议替换默认开启下载弹幕跳过字幕下载默认开启视频升序最小体积优先音频升序最小体积优先不替换域名仅在正常情况与均无法下载时使用使用内置变量自定义单存储文件名视频主标题视频分序号视频分序号前缀补零视频分标题视频号视频视频视频清晰度视频分辨率视频帧率视频编码视频码率音频编码音频码率上传者名称上传者发布时间类型默认为使用内置变量自定义多存储文件名默认为选择指定分或分范围或或或或设置混流的音频语言代码如等指定否则使用随机设置字符串用以下载网页接口的会员内容设置用以下载接口的会员内容调用的附加参数默认参数包含使用时注意字符串转义设置程序的工作目录设置的路径设置的路径设置的路径自定义服务器强制替换下载服务器默认开启设置下载合集分之间的下载间隔时间单位秒默认无间隔指定使用需要不需要解析服务器能够获取你账号的大部分权限指定用于代理大部分解析服务器不支持代理该接口使用时必选指定读取指定的本地配置文件默认为通过扫描二维码以登录您的账号通过扫描二维码以登录您的账号功能番剧下载课程下载普通内容下载合集列表收藏夹个人空间解析多分自动下载选择指定分进行下载选择指定清晰度进行下载下载外挂字幕并转换为格式自动合并音频视频流字幕流章节信息使用或单独下载视频音频字幕二维码登录账号多线程下载支持调用下载支持编码支持杜比视界杜比全景声下载自定义存储文件名自动刷新支持更多自定义选项使用教程配置文件在或更高版本中支持读取本地配置文件以简化命令行的手动输入如果用户没有指定则默认读取程序同目录下的文件若用户指定则读取特定文件一个典型的配置文件本文件是程序的配置文件以开头的都会被程序忽略然后剩余非空白内容程序逐行读取对于一个选项其参数应当在下一行出现例如下面将设置输出文件名格式下面设置下载多个分时每个分的下载间隔为秒开启弹幕下载功能自定义输出文件名格式在或更高版本中支持用户自定义合并时的文件名组成代码含义视频主标题视频分序号视频分序号前缀补零视频分标题视频号视频视频视频清晰度视频分辨率视频帧率视频编码视频码率音频编码音频码率上传者名称下载番剧时该值为上传者下载番剧时该值为发布时间类型鉴权扫码登录网页账号然后按照提示操作扫码登录云视听小电视账号然后按照提示操作如果登录报错请参考解决手动加载网页手动加载云视听小电视鉴权根据可以填写登录产生的来给接口使用可复制到使程序自动读取目前程序无法自动获取鉴权信息推荐通过抓包来获取在请求中寻找键为的项其值形为其中的就是获取后手动通过命令加载或写入使程序自动读取常用命令下载普通视频使用接口下载粉丝量大的主基本上是无水印片源当分过多时默认会隐藏展示全部的分信息你可以使用如下命令来显示所有每一个分选择下载某些分的三种情况单个分多个分范围分下载番剧全集服务器启动服务器自定义监听地址和端口服务器不支持配置如果有需要请自行使用等反向代理进行配置详细请参考演示下载完毕后在当前目录查看文件',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-02-03 16:18:22',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://q1.qlogo.cn/g?b=qq&amp;nk=136197754&amp;s=640"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://www.syyxin.eu.org/" title="博客"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://home.syyxin.eu.org/" title="个人主页"><img class="back-menu-item-icon" src="https://home.syyxin.eu.org/images/favicon.ico" alt="个人主页"/><span class="back-menu-item-text">个人主页</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">梦芽博客</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=19723756&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/syybi/call@1.0/img/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE%E5%B8%B8.png" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://gcore.jsdelivr.net/gh/syybi/call@1.0/img/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE%E5%B8%B8.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/syybi/call@1.0/img/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81%E5%B8%B8.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://gcore.jsdelivr.net/gh/syybi/call@1.0/img/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81%E5%B8%B8.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/%E8%AF%B4%E8%AF%B4/" style="font-size: 1.05rem;">说说<sup>1</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" style="font-size: 1.05rem;">软件分享<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">二月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">转载</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" itemprop="url">软件分享</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>软件分享</span></a></span></div></div><h1 class="post-title" itemprop="name headline">【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2024-02-03T07:10:38.000Z" title="发表于 2024-02-03 15:10:38">2024-02-03</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2024-02-03T08:18:22.275Z" title="更新于 2024-02-03 16:18:22">2024-02-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">2.3k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为广西"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>广西</span><span class="post-meta-separator"></span><span class="post-meta-commentcount"><i class="anzhiyufont anzhiyu-icon-comments post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/posts/3.html#post-comment" tabindex="-1"><span id="twikoo-count"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></a></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://www.freeimg.cn/i/2024/02/03/65bdeab701f4c.png"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://github.com/nilaoda/BBDown/blob/master/README.md"><header><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" itemprop="url">软件分享</a><a href="/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" tabindex="-1" itemprop="url">软件分享</a><h1 id="CrawlerTitle" itemprop="name headline">【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">nilaoda</span><time itemprop="dateCreated datePublished" datetime="2024-02-03T07:10:38.000Z" title="发表于 2024-02-03 15:10:38">2024-02-03</time><time itemprop="dateCreated datePublished" datetime="2024-02-03T08:18:22.275Z" title="更新于 2024-02-03 16:18:22">2024-02-03</time></header><p><a target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.shields.io/github/stars/nilaoda/BBDown?label=%E7%82%B9%E8%B5%9E" alt="img"></a>  <a target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.shields.io/github/last-commit/nilaoda/BBDown?label=%E6%9C%80%E8%BF%91%E6%8F%90%E4%BA%A4" alt="img"></a>  <a target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown/releases"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.shields.io/github/release/nilaoda/BBDown?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC" alt="img"></a>  <a target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img.shields.io/github/license/nilaoda/BBDown?label=%E8%AE%B8%E5%8F%AF%E8%AF%81" alt="img"></a>  <a target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown/actions/workflows/build_latest.yml"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://github.com/nilaoda/BBDown/actions/workflows/build_latest.yml/badge.svg" alt="Build Latest"></a></p>
+<h1 id="BBDown"><a href="#BBDown" class="headerlink" title="BBDown"></a>BBDown</h1><p>一款命令行式哔哩哔哩下载器. Bilibili Downloader.</p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>本软件混流时需要外部程序：</p>
+<ul>
+<li>普通视频：<a target="_blank" rel="noopener" href="https://www.gyan.dev/ffmpeg/builds/">ffmpeg</a> ，或 <a target="_blank" rel="noopener" href="https://gpac.wp.imt.fr/downloads/">mp4box</a></li>
+<li>杜比视界：ffmpeg5.0以上或新版mp4box.</li>
+</ul>
+<h1 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h1><p>本软件已经以 <a target="_blank" rel="noopener" href="https://www.nuget.org/packages/BBDown/">Dotnet Tool</a> 形式发布  </p>
+<p>如果你本地有dotnet环境，使用如下命令即可安装使用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dotnet tool install --global BBDown</span><br></pre></td></tr></table></figure>
+
+<p>如果需要更新bbdown，使用如下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dotnet tool update --global BBDown</span><br></pre></td></tr></table></figure>
+
+<h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p>Release版本：<a target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown/releases">https://github.com/nilaoda/BBDown/releases</a></p>
+<p>自动构建的测试版本：<a target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown/actions">https://github.com/nilaoda/BBDown/actions</a></p>
+<h1 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h1><div class="note warning simple"><p>下载无水印视频需要登录云视听小电视账号，部分视频可能还是会有水印，一般很火的视频是没有水印的。</p>
+</div>
+
+<p>目前命令行参数支持情况</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Description:</span><br><span class="line">  BBDown是一个免费且便捷高效的哔哩哔哩下载/解析软件.</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">  BBDown &lt;url&gt; [command] [options]</span><br><span class="line"></span><br><span class="line">Arguments:</span><br><span class="line">  &lt;url&gt;  视频地址 或 av|bv|BV|ep|ss</span><br><span class="line"></span><br><span class="line">Options:</span><br><span class="line">  -tv, --use-tv-api                              使用TV端解析模式</span><br><span class="line">  -app, --use-app-api                            使用APP端解析模式</span><br><span class="line">  -intl, --use-intl-api                          使用国际版(东南亚视频)解析模式</span><br><span class="line">  --use-mp4box                                   使用MP4Box来混流</span><br><span class="line">  -e, --encoding-priority &lt;encoding-priority&gt;    视频编码的选择优先级, 用逗号分割 例: &quot;hevc,av1,avc&quot;</span><br><span class="line">  -q, --dfn-priority &lt;dfn-priority&gt;              画质优先级,用逗号分隔 例: &quot;8K 超高清, 1080P 高码率, HDR 真彩, 杜比视界&quot;</span><br><span class="line">  -info, --only-show-info                        仅解析而不进行下载</span><br><span class="line">  --show-all                                     展示所有分P标题</span><br><span class="line">  --use-aria2c                                   调用aria2c进行下载(你需要自行准备好二进制可执行文件)</span><br><span class="line">  -ia, --interactive                             交互式选择清晰度</span><br><span class="line">  -hs, --hide-streams                            不要显示所有可用音视频流</span><br><span class="line">  -mt, --multi-thread                            使用多线程下载(默认开启)</span><br><span class="line">  --video-only                                   仅下载视频</span><br><span class="line">  --audio-only                                   仅下载音频</span><br><span class="line">  --danmaku-only                                 仅下载弹幕</span><br><span class="line">  --sub-only                                     仅下载字幕</span><br><span class="line">  --cover-only                                   仅下载封面</span><br><span class="line">  --debug                                        输出调试日志</span><br><span class="line">  --skip-mux                                     跳过混流步骤</span><br><span class="line">  --skip-subtitle                                跳过字幕下载</span><br><span class="line">  --skip-cover                                   跳过封面下载</span><br><span class="line">  --force-http                                   下载音视频时强制使用HTTP协议替换HTTPS(默认开启)</span><br><span class="line">  -dd, --download-danmaku                        下载弹幕</span><br><span class="line">  --skip-ai                                      跳过AI字幕下载(默认开启)</span><br><span class="line">  --video-ascending                              视频升序(最小体积优先)</span><br><span class="line">  --audio-ascending                              音频升序(最小体积优先)</span><br><span class="line">  --allow-pcdn                                   不替换PCDN域名, 仅在正常情况与--upos-host均无法下载时使用</span><br><span class="line">  -F, --file-pattern &lt;file-pattern&gt;              使用内置变量自定义单P存储文件名:</span><br><span class="line"></span><br><span class="line">                                                 &lt;videoTitle&gt;: 视频主标题</span><br><span class="line">                                                 &lt;pageNumber&gt;: 视频分P序号</span><br><span class="line">                                                 &lt;pageNumberWithZero&gt;: 视频分P序号(前缀补零)</span><br><span class="line">                                                 &lt;pageTitle&gt;: 视频分P标题</span><br><span class="line">                                                 &lt;bvid&gt;: 视频BV号</span><br><span class="line">                                                 &lt;aid&gt;: 视频aid</span><br><span class="line">                                                 &lt;cid&gt;: 视频cid</span><br><span class="line">                                                 &lt;dfn&gt;: 视频清晰度</span><br><span class="line">                                                 &lt;res&gt;: 视频分辨率</span><br><span class="line">                                                 &lt;fps&gt;: 视频帧率</span><br><span class="line">                                                 &lt;videoCodecs&gt;: 视频编码</span><br><span class="line">                                                 &lt;videoBandwidth&gt;: 视频码率</span><br><span class="line">                                                 &lt;audioCodecs&gt;: 音频编码</span><br><span class="line">                                                 &lt;audioBandwidth&gt;: 音频码率</span><br><span class="line">                                                 &lt;ownerName&gt;: 上传者名称</span><br><span class="line">                                                 &lt;ownerMid&gt;: 上传者mid</span><br><span class="line">                                                 &lt;publishDate&gt;: 发布时间</span><br><span class="line">                                                 &lt;apiType&gt;: API类型(TV/APP/INTL/WEB)</span><br><span class="line"></span><br><span class="line">                                                 默认为: &lt;videoTitle&gt;</span><br><span class="line">  -M, --multi-file-pattern &lt;multi-file-pattern&gt;  使用内置变量自定义多P存储文件名:</span><br><span class="line"></span><br><span class="line">                                                 默认为: &lt;videoTitle&gt;/[P&lt;pageNumberWithZero&gt;]&lt;pageTitle&gt;</span><br><span class="line">  -p, --select-page &lt;select-page&gt;                选择指定分p或分p范围: (-p 8 或 -p 1,2 或 -p 3-5 或 -p ALL 或 -p LAST)</span><br><span class="line">  --language &lt;language&gt;                          设置混流的音频语言(代码), 如chi, jpn等</span><br><span class="line">  -ua, --user-agent &lt;user-agent&gt;                 指定user-agent, 否则使用随机user-agent</span><br><span class="line">  -c, --cookie &lt;cookie&gt;                          设置字符串cookie用以下载网页接口的会员内容</span><br><span class="line">  -token, --access-token &lt;access-token&gt;          设置access_token用以下载TV/APP接口的会员内容</span><br><span class="line">  --aria2c-args &lt;aria2c-args&gt;                    调用aria2c的附加参数(默认参数包含&quot;-x16 -s16 -j16 -k 5M&quot;, 使用时注意字符串转义)</span><br><span class="line">  --work-dir &lt;work-dir&gt;                          设置程序的工作目录</span><br><span class="line">  --ffmpeg-path &lt;ffmpeg-path&gt;                    设置ffmpeg的路径</span><br><span class="line">  --mp4box-path &lt;mp4box-path&gt;                    设置mp4box的路径</span><br><span class="line">  --aria2c-path &lt;aria2c-path&gt;                    设置aria2c的路径</span><br><span class="line">  --upos-host &lt;upos-host&gt;                        自定义upos服务器</span><br><span class="line">  --force-replace-host                           强制替换下载服务器host(默认开启)</span><br><span class="line">  --delay-per-page &lt;delay-per-page&gt;              设置下载合集分P之间的下载间隔时间(单位: 秒, 默认无间隔)</span><br><span class="line">  --host &lt;host&gt;                                  指定BiliPlus host(使用BiliPlus需要access_token, 不需要cookie, 解析服务器能够获取你账号的大部分权限!)</span><br><span class="line">  --ep-host &lt;ep-host&gt;                            指定BiliPlus EP host(用于代理api.bilibili.com/pgc/view/web/season, 大部分解析服务器不支持代理该接口)</span><br><span class="line">  --area &lt;area&gt;                                  (hk|tw|th) 使用BiliPlus时必选, 指定BiliPlus area</span><br><span class="line">  --config-file &lt;config-file&gt;                    读取指定的BBDown本地配置文件(默认为: BBDown.config)</span><br><span class="line">  --version                                      Show version information</span><br><span class="line">  -?, -h, --help                                 Show help and usage information</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Commands:</span><br><span class="line">  login    通过APP扫描二维码以登录您的WEB账号</span><br><span class="line">  logintv  通过APP扫描二维码以登录您的TV账号</span><br></pre></td></tr></table></figure>
+
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
+<li><input checked="" disabled="" type="checkbox"> 番剧下载(Web|TV|App)</li>
+<li><input checked="" disabled="" type="checkbox"> 课程下载(Web)</li>
+<li><input checked="" disabled="" type="checkbox"> 普通内容下载(Web|TV|App)</li>
+<li><input checked="" disabled="" type="checkbox"> 合集&#x2F;列表&#x2F;收藏夹&#x2F;个人空间解析</li>
+<li><input checked="" disabled="" type="checkbox"> 多分P自动下载</li>
+<li><input checked="" disabled="" type="checkbox"> 选择指定分P进行下载</li>
+<li><input checked="" disabled="" type="checkbox"> 选择指定清晰度进行下载</li>
+<li><input checked="" disabled="" type="checkbox"> 下载外挂字幕并转换为srt格式</li>
+<li><input checked="" disabled="" type="checkbox"> 自动合并音频+视频流+字幕流+<strong>章节信息</strong><code>(使用ffmpeg或mp4box)</code></li>
+<li><input checked="" disabled="" type="checkbox"> 单独下载视频&#x2F;音频&#x2F;字幕</li>
+<li><input checked="" disabled="" type="checkbox"> 二维码登录账号</li>
+<li><input checked="" disabled="" type="checkbox"> 多线程下载</li>
+<li><input checked="" disabled="" type="checkbox"> 支持调用aria2c下载</li>
+<li><input checked="" disabled="" type="checkbox"> 支持AVC&#x2F;HEVC&#x2F;AV1编码</li>
+<li><input checked="" disabled="" type="checkbox"> <strong>支持8K&#x2F;HDR&#x2F;杜比视界&#x2F;杜比全景声下载</strong></li>
+<li><input checked="" disabled="" type="checkbox"> 自定义存储文件名</li>
+</ul>
+<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><ul>
+<li><input disabled="" type="checkbox"> 自动刷新cookie</li>
+<li><input disabled="" type="checkbox"> 支持更多自定义选项</li>
+</ul>
+<h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h1><details class="folding-tag" green><summary> 配置文件 (NEW) </summary>
+              <div class='content'>
+              <hr><p>在<code>1.4.9</code>或更高版本中，BBDown支持读取本地配置文件以简化命令行的手动输入。</p><p>如果用户没有指定<code>--config-file</code>，则默认读取程序同目录下的<code>BBDown.config</code>文件；若用户指定，则读取特定文件。</p><p>一个典型的配置文件:</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#本文件是BBDown程序的配置文件</span><br><span class="line">#以#开头的都会被程序忽略</span><br><span class="line">#然后剩余非空白内容程序逐行读取，对于一个选项，其参数应当在下一行出现</span><br><span class="line"></span><br><span class="line">#例如下面将设置输出文件名格式</span><br><span class="line">--file-pattern</span><br><span class="line">&lt;videoTitle&gt;[&lt;dfn&gt;]</span><br><span class="line"></span><br><span class="line">--multi-file-pattern</span><br><span class="line">&lt;videoTitle&gt;/[P&lt;pageNumberWithZero&gt;]&lt;pageTitle&gt;[&lt;dfn&gt;]</span><br><span class="line"></span><br><span class="line">#下面设置下载多个分P时，每个分P的下载间隔为2秒</span><br><span class="line">--delay-per-page</span><br><span class="line">2</span><br><span class="line"></span><br><span class="line">#开启弹幕下载功能</span><br><span class="line">--download-danmaku</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<details class="folding-tag" green><summary> 自定义输出文件名格式 (NEW) </summary>
+              <div class='content'>
+              <hr><p>在<code>1.4.9</code>或更高版本中，BBDown支持用户自定义合并时的文件名组成。</p><table><thead><tr><th>代码</th><th>含义</th></tr></thead><tbody><tr><td><code>&lt;videoTitle&gt;</code></td><td>视频主标题</td></tr><tr><td><code>&lt;pageNumber&gt;</code></td><td>视频分P序号</td></tr><tr><td><code>&lt;pageNumberWithZero&gt;</code></td><td>视频分P序号(前缀补零)</td></tr><tr><td><code>&lt;pageTitle&gt;</code></td><td>视频分P标题</td></tr><tr><td><code>&lt;bvid&gt;</code></td><td>视频BV号</td></tr><tr><td><code>&lt;aid&gt;</code></td><td>视频aid</td></tr><tr><td><code>&lt;cid&gt;</code></td><td>视频cid</td></tr><tr><td><code>&lt;dfn&gt;</code></td><td>视频清晰度</td></tr><tr><td><code>&lt;res&gt;</code></td><td>视频分辨率</td></tr><tr><td><code>&lt;fps&gt;</code></td><td>视频帧率</td></tr><tr><td><code>&lt;videoCodecs&gt;</code></td><td>视频编码</td></tr><tr><td><code>&lt;videoBandwidth&gt;</code></td><td>视频码率</td></tr><tr><td><code>&lt;audioCodecs&gt;</code></td><td>音频编码</td></tr><tr><td><code>&lt;audioBandwidth&gt;</code></td><td>音频码率</td></tr><tr><td><code>&lt;ownerName&gt;</code></td><td>上传者名称(下载番剧时，该值为””)</td></tr><tr><td><code>&lt;ownerMid&gt;</code></td><td>上传者mid(下载番剧时，该值为””)</td></tr><tr><td><code>&lt;publishDate&gt;</code></td><td>发布时间(yyyy-MM-dd_HH-mm-ss)</td></tr><tr><td><code>&lt;apiType&gt;</code></td><td>API类型（TV&#x2F;APP&#x2F;INTL&#x2F;WEB）</td></tr></tbody></table>
+              </div>
+            </details>
+
+<details class="folding-tag" green><summary> WEB/TV鉴权 </summary>
+              <div class='content'>
+              <hr><p>扫码登录网页账号：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown login</span><br></pre></td></tr></table></figure><p>然后按照提示操作</p><p>扫码登录云视听小电视账号：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown logintv</span><br></pre></td></tr></table></figure><p>然后按照提示操作</p><p><em>PS: 如果登录报错<code>The type initializer for &#39;Gdip&#39; threw an exception</code>，请参考 <a target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown/issues/37">#37</a> 解决</em></p><p>手动加载网页cookie：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown -c &quot;SESSDATA=******&quot; &quot;https://www.bilibili.com/video/BV1qt4y1X7TW&quot;</span><br></pre></td></tr></table></figure><p>手动加载云视听小电视token：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown -tv -token &quot;******&quot; &quot;https://www.bilibili.com/video/BV1qt4y1X7TW&quot;</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<details class="folding-tag" green><summary> APP鉴权 </summary>
+              <div class='content'>
+              <hr><blockquote><p>根据 <a target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown/issues/123#issuecomment-877583825">#123</a> ，可以填写TV登录产生的<code>access_token</code>来给APP接口使用。可复制<code>BBDownTV.data</code>到<code>BBDownApp.data</code>使程序自动读取.</p></blockquote><p>目前程序无法自动获取鉴权信息，推荐通过<strong>抓包</strong>来获取.</p><p>在请求Header中寻找键为<code>authorization</code>的项，其值形为<code>identify_v1 5227************1</code>，其中的<code>5227************1</code>就是token(access_key)</p><p>获取后手动通过<code>-token</code>命令加载, 或写入<code>BBDownApp.data</code>使程序自动读取.</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown -app -token &quot;******&quot; &quot;https://www.bilibili.com/video/BV1qt4y1X7TW&quot;</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<details class="folding-tag" green><summary> 常用命令 </summary>
+              <div class='content'>
+              <hr><p>下载普通视频：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown &quot;https://www.bilibili.com/video/BV1qt4y1X7TW&quot;</span><br></pre></td></tr></table></figure><p>使用TV接口下载(粉丝量大的UP主基本上是无水印片源)：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown -tv &quot;https://www.bilibili.com/video/BV1qt4y1X7TW&quot;</span><br></pre></td></tr></table></figure><p>当分P过多时，默认会隐藏展示全部的分P信息，你可以使用如下命令来显示所有每一个分P。</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown --show-all &quot;https://www.bilibili.com/video/BV1At41167aj&quot;</span><br></pre></td></tr></table></figure><p>选择下载某些分P的三种情况：</p><ul><li>单个分P：10<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown &quot;https://www.bilibili.com/video/BV1At41167aj?p=10&quot;</span><br><span class="line">BBDown -p 10 &quot;https://www.bilibili.com/video/BV1At41167aj&quot;</span><br></pre></td></tr></table></figure></li><li>多个分P：1,2,10<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown -p 1,2,10 &quot;https://www.bilibili.com/video/BV1At41167aj&quot;</span><br></pre></td></tr></table></figure></li><li>范围分P：1-10<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown -p 1-10 &quot;https://www.bilibili.com/video/BV1At41167aj&quot;</span><br></pre></td></tr></table></figure>下载番剧全集：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">BBDown -p ALL &quot;https://www.bilibili.com/bangumi/play/ss33073&quot;</span><br></pre></td></tr></table></figure></li></ul>
+              </div>
+            </details>
+
+<details class="folding-tag" green><summary> API服务器 </summary>
+              <div class='content'>
+              <p>启动服务器（自定义监听地址和端口）：</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">BBDown server -l http://0.0.0.0:12450</span><br></pre></td></tr></table></figure><p>API服务器不支持HTTPS配置，如果有需要请自行使用nginx等反向代理进行配置</p><p>API详细请参考<a href="./json-api-doc.md">json-api-doc.md</a></p>
+              </div>
+            </details>
+
+<h1 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h1><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i.loli.net/2020/08/16/iNF961RU7lyeEZc.gif" alt="1"></p>
+<p>下载完毕后在当前目录查看MP4文件：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i.loli.net/2020/08/16/kJqtAp4U1jDW5vm.png" alt="2"></p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=136197754&amp;s=640" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=136197754&amp;s=640" title="头像" alt="头像"></a><div class="post-copyright__author_name">nilaoda</div><div class="post-copyright__author_desc">生活明朗 万物可爱</div></div><div class="post-copyright__post__info"><a class="post-copyright__reprint" title="该文章为转载文章，注意版权协议" target="_blank" rel="noopener" href="https://github.com/nilaoda/BBDown/blob/master/README.md">转载</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://github.com/nilaoda/BBDown/blob/master/README.md')">【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/syybi/call@1.0/img/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE%E5%B8%B8.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://gcore.jsdelivr.net/gh/syybi/call@1.0/img/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE%E5%B8%B8.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://gcore.jsdelivr.net/gh/syybi/call@1.0/img/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81%E5%B8%B8.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://gcore.jsdelivr.net/gh/syybi/call@1.0/img/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81%E5%B8%B8.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://github.com/nilaoda/BBDown/blob/master/README.md"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）&amp;url=https://github.com/nilaoda/BBDown/blob/master/README.md&amp;pic=https://www.freeimg.cn/i/2024/02/03/65bdeab701f4c.png" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.syyxin.eu.org" target="_blank">梦芽博客</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>软件分享<span class="tagsPageCount">1</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://www.freeimg.cn/i/2024/02/03/65bdeab701f4c.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/2.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img2.imgtp.com/2024/02/02/tkZTiH1m.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">关于本站</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-switch"><span class="first-comment">Twikoo</span><span id="switch-btn"></span><span class="second-comment">Waline</span></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div id="waline-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=136197754&amp;s=640" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description">这是一个技术博客，分享一些网站源码和技术教程</div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">飔梦</h1><div class="author-info__desc">生活明朗 万物可爱</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/1042616002" target="_blank" title="BiliBili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#BBDown"><span class="toc-number">1.</span> <span class="toc-text">BBDown</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-number">2.</span> <span class="toc-text">注意</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"><span class="toc-number">3.</span> <span class="toc-text">快速开始</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-number">4.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8"><span class="toc-number">5.</span> <span class="toc-text">开始使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-number">6.</span> <span class="toc-text">功能</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TODO"><span class="toc-number">7.</span> <span class="toc-text">TODO</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B"><span class="toc-number">8.</span> <span class="toc-text">使用教程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%BC%94%E7%A4%BA"><span class="toc-number">9.</span> <span class="toc-text">演示</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/3.html" title="【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freeimg.cn/i/2024/02/03/65bdeab701f4c.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）"/></a><div class="content"><a class="title" href="/posts/3.html" title="【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）">【BBDown】命令行哔哩哔哩下载器（支持下载TV无水印片源，支持Win/Linux/Mac）</a><time datetime="2024-02-03T07:10:38.000Z" title="发表于 2024-02-03 15:10:38">2024-02-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2.html" title="关于本站"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img2.imgtp.com/2024/02/02/tkZTiH1m.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于本站"/></a><div class="content"><a class="title" href="/posts/2.html" title="关于本站">关于本站</a><time datetime="2024-02-03T04:06:28.000Z" title="发表于 2024-02-03 12:06:28">2024-02-03</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:136197754@qq.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://q1.qlogo.cn/g?b=qq&amp;nk=136197754&amp;s=640" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/1042616002" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div><div id="workboard"><img class="workSituationImg boardsign" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://fastly.jsdelivr.net/gh/dr-190/cdn@1.0/img//飔梦-上班摸鱼中.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2024 By <a class="footer-bar-link" href="/" title="飔梦" target="_blank">飔梦</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">1</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://www.syyxin.eu.org/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="https://home.syyxin.eu.org/" title="个人主页"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://home.syyxin.eu.org/images/favicon.ico" alt="个人主页"/><span class="back-menu-item-text">个人主页</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=19723756&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/%E8%AF%B4%E8%AF%B4/" style="font-size: 0.88rem;">说说<sup>1</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" style="font-size: 0.88rem;">软件分享<sup>1</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><a id="switch-commentBarrage" href="javascript:anzhiyu.switchCommentBarrage();" title="开关弹幕"><i class="anzhiyufont anzhiyu-icon-danmu"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="7665481544" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://music.163.com/#/playlist?id=7665481544&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span></span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("02/01/2024 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2024 By 安知鱼 V1.6.12",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 飔梦 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("02/01/2024 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "https://fastly.jsdelivr.net/gh/dr-190/cdn@1.0.1/img//飔梦-下班啦.svg";
+        img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+        img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+      }
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><script src="https://cdn.cbd.int/algoliasearch@4.18.0/dist/algoliasearch-lite.umd.js"></script><script src="https://cdn.cbd.int/instantsearch.js@4.60.0/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://syybili-twikoo.hf.space/',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.25/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://syybili-twikoo.hf.space/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><script>(() => {
+  const initWaline = () => {
+    const waline = Waline.init(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://commentaries.syyxin.eu.org/',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      path: window.location.pathname,
+      comment: true,
+    }, null))
+  }
+
+  const loadWaline = async () => {
+    if (typeof Waline === 'object') initWaline()
+    else {
+      await getCSS('https://cdn.cbd.int/@waline/client@2.15.5/dist/waline.css')
+      await getScript('https://cdn.cbd.int/@waline/client@2.15.5/dist/waline.js')
+      initWaline()
+    }
+  }
+
+  if ('Twikoo' === 'Waline' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://syybili-twikoo.hf.space/',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.25/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script>var visitorMail = "visitor@syyxin.eu.org";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
